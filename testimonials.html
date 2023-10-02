@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TESTIMONIALS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./testimonials.css" />
+  </head>
+  <body>
+    <nav class="fixed-nav-bar">
+      <div class="logo">Smartgovt</div>
+      <div class="menu">
+        <a href="./landingpage.html">HOME</a>
+        <a href="./login.html">LOGIN</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./services.html">SERVICES</a>
+        <a href="./testimonials.html">TESTIMONIALS</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./logout.html">LOGOUT</a>
+      </div>
+    </nav>
+    <br /><br /><br /><br />
+
+    <div class="carousel">
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="./images/vinnuhh.jpg" />
+          </div>
+          <p>
+            "The smart government project has revolutionized the way we interact
+            with public services. It's efficient, user-friendly, and has
+            significantly improved our overall experience. Kudos to the team
+            behind this innovative initiative!"
+          </p>
+          <h4>Vinnuh Reddy</h4>
+          <h5>Web Developer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRda5oWE4dwEBMgfxasgPN7TIjQFACYAFZ5xMJ5NVq7S0OFD_FAey1vTwR-X9X9GUd03Ao&usqp=CAU"
+            />
+          </div>
+          <p>
+            "As a government official, I am truly impressed with the impact of
+            the smart government project. It has streamlined our processes,
+            reduced paperwork, and enhanced collaboration among departments.
+            This project is a game-changer in the public sector"
+          </p>
+          <h4>John Doe</h4>
+          <h5>Web Designer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/495/184/non_2x/young-woman-girl-avatar-user-person-people-headphone-hoodie-outline-colored-sticker-retro-style-vector.jpg"
+            />
+          </div>
+          <p>
+            "Our citizens now have seamless access to essential services, thanks
+            to the smart government project. It has not only saved time and
+            resources but has also increased citizen satisfaction. I'm proud to
+            be part of a community that values innovation and progress."
+          </p>
+          <h4>Jane Smith</h4>
+          <h5>Frontend developer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Vf1KqSHSTgiMA7MCM-921Ac0tCP6pGtqMuMUoI77ye9Xd7C2FegCc6DnsmzGIJ_-ddU&usqp=CAU" />
+          </div>
+          <p>
+            "The smart government project has brought transparency and
+            accountability to our local government. The real-time data analytics
+            provided have empowered us to make informed decisions, leading to
+            more effective governance. I'm excited about the positive changes it
+            continues to bring"
+          </p>
+          <h4>Johnson</h4>
+          <h5>Web Developer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWvrzR5sWAVlcje-q94SutHh8Vz0w3-_zsA&usqp=CAU" />
+          </div>
+          <p>
+            "I'm a resident who directly benefits from the smart government
+            project. The online services are incredibly convenient, and the
+            responsiveness of government agencies has vastly improved. It's
+            evident that our government is committed to using technology for the
+            betterment of society."
+          </p>
+          <h4>Michel Brown</h4>
+          <h5>Web Designer</h5>
+        </div>
+      </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel({
+          padding: 200,
+        });
+        autoplay();
+        function autoplay() {
+          $(".carousel").carousel("next");
+          setTimeout(autoplay, 4500);
+        }
+      });
+    </script>
+  </body>
+</html>
